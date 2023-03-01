@@ -1,0 +1,160 @@
+.popup__win, .popup__loss {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba( #000000, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  display: none;
+}
+
+.popup__block {
+  position: relative;
+  animation: notificationScale 0.3s 0.3s backwards;
+}
+
+@keyframes notificationScale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup__img {
+  @include phones {
+    transform: translateX(-4%);
+    max-width: 108%;
+  }
+}
+
+.popup__desc {
+  position: absolute;
+  top: 67%;
+  left: 0%;
+  right: 0%;
+  padding: 0% 16%;
+}
+
+.popup__title {
+  font-size: rem(64);
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFD953;
+  text-shadow: 0px 0px 10px #FFD953;
+  margin-bottom: rem(5);
+  
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    font-size: rem(53.3);
+  }
+}
+
+.popup__text {
+  font-size: rem(32);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  
+  @include phones {
+    font-size: rem(26.67);
+  }
+}
+
+.popup__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 11%);
+}
+
+.popup__loss {
+  .popup__img {
+    @include phones {
+      transform: translateX(0%);
+      max-width: 100%;
+    }
+  }
+
+  .popup__desc {
+    top: 38%;
+    left: 0%;
+    right: 0%;
+    padding: 0% 20% 0% 9%;
+  }
+
+  .popup__title {
+    font-size: rem(56);
+    
+    @include tablets {
+      font-size: rem(48);
+    }
+    
+    @include phones {
+      font-size: rem(40);
+    }
+  }
+  
+  .popup__button {
+    transform: translate(-59%, 33%);
+  }
+}
+
+
+
+.popup-second {
+  .popup__title {
+    color: #FDFEB7;
+    text-shadow: 0px 0px 10px #FDFEB7;
+    
+    @include phones {
+      font-size: rem(48);
+    }
+  }
+  
+  .popup__text {    
+    @include phones {
+      font-size: rem(24);
+    }
+  }
+
+  .popup__button {
+    transform: translate(-50%, 25%);
+  }
+
+  
+  .popup__loss {
+    .popup__desc {
+      padding: 0% 16% 0% 23%;
+    }
+  
+    .popup__button {
+      transform: translate(-45%, -35%);
+    }
+
+    .popup__title {
+      @include phones {
+        font-size: rem(35);
+      }
+    }
+  }
+}

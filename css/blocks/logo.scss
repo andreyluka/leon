@@ -1,0 +1,13 @@
+.logo {
+  width: 147px;
+  display: block;
+  margin: 0 auto 23px;
+}
+
+.logo-second {
+  margin: 0 0 rem(4) rem(46);
+  
+  @include tablets {
+    margin: 0 auto 23px;
+  }
+}

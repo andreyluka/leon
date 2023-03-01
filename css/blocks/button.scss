@@ -1,0 +1,48 @@
+.button {
+  padding: 0.51em 2.51em;
+  background: linear-gradient(180deg, #FEED7C 0%, #FFC54B 100%);
+  border: 2px solid #FFA645;
+  border-radius: rem(53.3);
+  white-space: nowrap;
+  font-size: rem(32);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #313131;
+  text-shadow: 0px 2px 0px #FFEA83;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &:hover {
+    background: linear-gradient(0deg, #FEED7C 0%, #FFC54B 100%);
+  }
+
+
+  &--short {
+    padding: 0.51em 1.6em;
+    
+    @include phones {
+      font-size: rem(28);
+    }
+  }
+  
+  &--high {
+    font-size: rem(30);
+    padding: 0.85em 1.7em;
+    letter-spacing: 0.025em;
+    
+    @include phones {
+      font-size: rem(32);
+    }
+  }
+  
+  &--large {
+    font-size: rem(30);
+    padding: 0.86em 3.83em;
+        
+    @include phones {
+      font-size: rem(26);
+    }
+  }
+}

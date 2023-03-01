@@ -1,0 +1,149 @@
+.wheel {
+  display: block;
+  width: rem(648);
+  height: rem(642);
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  
+  @include tablets {
+    width: rem(500);
+    height: rem(500);
+  }
+  
+  @include phones {
+    width: rem(412);
+    height: rem(412);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: rem(835);
+    height: rem(775);
+    background: url('../../img/whell-decor.png') center center / cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    @include tablets {
+      width: rem(650.3);
+      height: rem(603.57);
+    }
+
+    @include phones {
+      width: rem(536);
+      height: rem(497.5);
+    }
+  }
+}
+
+.wheel__spiner {
+  width: rem(260);
+  height: rem(350);
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: 50% 90%;
+  transition: 0.7s;
+
+  @include tablets {
+    width: rem(202.49);
+    height: rem(272.58);
+  }
+
+  @include phones {
+    width: rem(166.67);
+    height: rem(224.67);
+  }
+}
+
+.wheel__button {
+  width: rem(140);
+  height: rem(140);
+  background: url('../../img/button.png') center center / cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.1);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+  }
+
+  @include tablets {
+    width: rem(109);
+    height: rem(109);
+  }
+
+  @include phones {
+    width: rem(89.87);
+    height: rem(89.87);
+  }
+}
+
+
+
+.wheel-second {
+  width: rem(584);
+  height: rem(584);
+  margin:0 0 rem(71);
+    
+  @include tablets {
+    width: rem(500);
+    height: rem(500);
+  }
+  
+  @include phones {
+    width: rem(453.34);
+    height: rem(453.34);
+    margin-bottom: rem(155);
+  }
+
+
+
+  &::before {
+    width: rem(627);
+    height: rem(627);
+    background: rgba(#FF9ED1, 0.7);
+    border-radius: 50%;
+      
+    @include tablets {
+      width: rem(549);
+      height: rem(549);
+    }
+    
+    @include phones {
+      width: rem(487);
+      height: rem(487);
+    }
+  }
+
+
+
+  .wheel__spiner {
+    top: -6.5%;
+    
+    @include tablets {
+      width: rem(228.57);
+      height: rem(285.71);
+    }
+    
+    @include phones {
+      width: rem(201.95);
+      height: rem(265.64);
+    }
+  }
+
+  .wheel__button {
+    background: url('../../img/button-second.png') center center / cover no-repeat;
+  }
+}

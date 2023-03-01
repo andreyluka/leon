@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>leon</title>
+</head>
+<body>
+  <div class="wrapper wrapper--decorated">
+    <a href="second.html" class="logo">
+      <img src="./img/logo.png" alt="logo" class="logo__img">
+    </a>
+    <div class="content">
+      <div class="title">
+        <h2 class="title__spin">Gira la rueda y gana</h2>
+        <div class="title__prize-block">
+          <h1 class="title__prize">fantásticos premios</h1>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="./img/wheel.png" alt="wheel" class="wheel__img">
+        <img src="./img/spiner.png" alt="wheel" class="wheel__spiner">
+        <button type="button" class="wheel__button start-button"></button>
+      </div>
+    </div>
+    <div class="decor">
+      <img src="./img/ball-1.png" alt="ball" class="decor__ball decor__ball--1">
+      <img src="./img/ball-2.png" alt="ball" class="decor__ball decor__ball--2">
+      <img src="./img/ball-3.png" alt="ball" class="decor__ball decor__ball--3">
+      <img src="./img/ball-4.png" alt="ball" class="decor__ball decor__ball--4">
+      <img src="./img/ball-5.png" alt="ball" class="decor__ball decor__ball--5">
+      <img src="./img/ball-3.png" alt="ball" class="decor__ball decor__ball--6">
+
+      <img src="./img/lady.png" alt="lady" class="decor__lady">
+    </div>
+    <div class="popup">
+      <div class="popup__win">
+        <div class="popup__block">
+          <img src="./img/popup-win.png" alt="win-image" class="popup__img">
+          <div class="popup__desc">
+            <h4 class="popup__title">Ganaste!</h4>
+            <div class="popup__text">Te espera un bono <br> de hasta S/.1,000!</div>
+          </div>
+          <!-- <button type="button" class="popup__button">Llevar</button> -->
+          <div class="popup__button">
+            <button type="button" class="button">Llevar</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__loss">
+        <div class="popup__block">
+          <img src="./img/popup-loss.png" alt="loss-image" class="popup__img">
+          <div class="popup__desc">
+            <h4 class="popup__title">Oh, no hay <br> suerte ahora</h4>
+            <div class="popup__text"></div>
+          </div>
+          <!-- <button type="button" class="popup__button">Girar de nuevo</button> -->
+          <div class="popup__button">
+            <button type="button" class="button button--short">Girar de nuevo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/demo-spin.js"></script>
+</body>
+</html>
