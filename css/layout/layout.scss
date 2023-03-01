@@ -68,7 +68,7 @@ p {
   width: 100%;
   min-height: 100%;
   padding: 29px 0 rem(165);
-  background: url('../../img/bg-1.jpg') center center / cover no-repeat;
+  background: url('../img/bg-1.jpg') center center / cover no-repeat;
   position: relative;
   overflow: hidden;
 
@@ -79,7 +79,7 @@ p {
       display: block;
       width: 85%;
       height: 85%;
-      background: url('../../img/decor.png') center center / cover no-repeat;
+      background: url('../img/decor.png') center center / cover no-repeat;
       position: absolute;
       top: 12%;
       left: 0%;
@@ -90,7 +90,7 @@ p {
   
   &-second {
     padding: 39px 0 rem(75);
-    background: url('../../img/bg-second.jpg') center center / cover no-repeat;
+    background: url('../img/bg-second.jpg') center center / cover no-repeat;
     
     @include phones {
       padding: 28px 0 0;
